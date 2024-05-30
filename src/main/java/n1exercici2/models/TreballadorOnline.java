@@ -22,6 +22,15 @@ public class TreballadorOnline extends Treballador {
         double sou = super.calcularSou(nHores) + internet;
         return sou;
     }
+// deprecated és un mètode que
+    @Deprecated
+    public static double calcularSouTrimestral(int preuHora) {
+        int horesSetmana = 40;
+        int setmanes = 12;
+        double sou = preuHora * horesSetmana * setmanes;
+        return sou;
+
+    }
 }
 
 
